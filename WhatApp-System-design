@@ -36,7 +36,7 @@ Designing the backend of WhatsApp involves creating a robust and scalable archit
     - Design the system with horizontal scalability in mind to handle increasing user loads.
     - Employ load balancing techniques to distribute traffic evenly across multiple backend servers.
     - Implement fault tolerance measures, such as replication and data backups, to ensure system resilience.
-
+```cpp
 #include <iostream>
 #include <vector>
 #include <unordered_map>
@@ -98,3 +98,4 @@ int main() {
 
     return 0;
 }
+```
