@@ -8,78 +8,100 @@ In this article, we will explore the object-oriented design and implementation o
 
 Allow users to create accounts, log in, and log out.
 Manage user profiles, preferences, and viewing history.
+
 2. **Content Catalog:**
 
 Maintain a catalog of available movies and TV shows.
 Categorize content based on genres, release date, etc.
+
 3. **Video Playback:**
 
 Enable users to play, pause, resume, and stop video playback.
 Support adaptive streaming for different internet speeds.
+
 4. **Offline Viewing:**
 
 Allow users to download content for offline viewing.
 Manage downloaded content securely and efficiently.
+
 5. **Recommendation System:**
 
 Provide personalized content recommendations based on user behavior and preferences.
+
 6. **Search Functionality:**
 
 Implement a robust search feature to help users find specific movies or TV shows.
+
 7. **Subscription Management:**
 
 Handle subscription plans, billing, and payment processing.
 Allow users to upgrade, downgrade, or cancel their subscription.
+
 8. **Social Features:**
 
 Implement social features such as sharing, liking, and commenting on content.
 Enable users to see what their friends are watching.
 ## Core Use Cases:
+
 1. **User Registration and Authentication:**
 
 Users can create accounts, log in, and log out securely.
+
 2. **Browsing and Searching:**
 
 Users can browse the content catalog, search for specific titles, and view details.
+
 3. **Video Playback:**
 
 Users can play, pause, resume, and stop video playback.
+
 4. **Offline Viewing:**
 
 Users can download content for offline viewing and manage downloads.
+
 5. **Recommendation System:**
 
 Users receive personalized content recommendations.
+
 6. **Subscription Management:**
 
 Users can manage their subscription plans, billing, and payment details.
+
 7. **Social Interaction:**
 
 Users can engage in social features like sharing, liking, and commenting on content.
 ## Key Classes:
-StreamingServiceSystem:
+
+**StreamingServiceSystem:**
 
 Manages the overall streaming service.
 Coordinates interactions between different components.
+
 1. **User:**
 
 Represents a user account with information like username, password, and preferences.
+
 2. **ContentCatalog:**
 
 Manages the catalog of movies and TV shows.
 Categorizes content and provides details for display.
+
 3. **VideoPlayer:**
 
 Handles video playback functionalities such as play, pause, and stop.
+
 4. **DownloadManager:**
 
 Manages the downloading and storage of content for offline viewing.
+
 5. **RecommendationEngine:**
 
 Generates personalized content recommendations for users.
+
 6. **SubscriptionManager:**
 
 Manages subscription plans, billing, and payment processing.
+
 7. **SocialInteractionHandler:**
 
 Handles social features like sharing, liking, and commenting.
