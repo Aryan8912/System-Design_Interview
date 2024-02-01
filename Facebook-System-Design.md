@@ -1,5 +1,5 @@
 Designing a Social Network Like Facebook
-This blog post explores designing and implementing a social network platform similar to Facebook using Java.
+This blog post explores designing and implementing a social network platform similar to Facebook using C++.
 
 We focus on user profiles, friendships, posting updates, and generating a feed of posts.
 
