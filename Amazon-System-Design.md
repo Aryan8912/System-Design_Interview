@@ -1,28 +1,31 @@
-Designing an Online Shopping System Like Amazon
-In this blog post, we're going to design and implement an Online Shopping System resembling Amazon, using C++.
+# Designing an Online Shopping System Like Amazon
+
+In this article, we're going to design and implement an Online Shopping System resembling Amazon, using C++. 
 
 This system will cover product listings, user accounts, shopping carts, and order processing.
 
-System Requirements
+## System Requirements
+
 The Online Shopping System should:
 
-Product Management: Manage a catalog of products.
-User Account Management: Handle user registrations and logins.
-Shopping Cart Management: Allow users to add and remove products from their shopping cart.
-Order Processing: Process user orders and maintain order history.
-Core Use Cases
-Browsing Products
-Managing User Accounts
-Handling Shopping Carts
-Processing Orders
-UML/Class Diagrams
-Key Classes:
+1. **Product Management:** Manage a catalog of products.
+2. **User Account Management:** Handle user registrations and logins.
+3. **Shopping Cart Management:** Allow users to add and remove products from their shopping cart.
+4. **Order Processing:** Process user orders and maintain order history.
 
-OnlineShoppingSystem: Manages the overall system.
-Product: Represents a product in the catalog.
-User: Represents a user of the system.
-ShoppingCart: Manages the shopping cart.
-Order: Represents a user's order.
+## Core Use Cases
+
+1. **Browsing Products**
+2. **Managing User Accounts**
+3. **Handling Shopping Carts**
+4. **Processing Orders**
+
+## Key Classes:
+- `OnlineShoppingSystem`: Manages the overall system.
+- `Product`: Represents a product in the catalog.
+- `User`: Represents a user of the system.
+- `ShoppingCart`: Manages the shopping cart.
+- `Order`: Represents a user's order.
 
 ```cpp
 #include <iostream>
