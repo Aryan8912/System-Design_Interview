@@ -1,30 +1,36 @@
-Designing a Concert Ticket Booking System
-In this article, we delve into the object-oriented design and implementation of a Concert Ticket Booking System using Java.
+# Designing a Concert Ticket Booking System
+
+In this article, we delve into the object-oriented design and implementation of a Concert Ticket Booking System using C++. 
 
 This system facilitates booking tickets for concerts and managing events.
 
-System Requirements
+## System Requirements
+
 The Concert Ticket Booking System should:
 
-Event Management: Manage concert details including dates, venues, and artists.
-User Account Management: Handle user registrations and profiles.
-Ticket Booking Process: Enable users to book tickets and select seats.
-Payment Processing: Handle ticket payments and issue receipts.
-Ticket Cancellation and Refund: Manage cancellations and refunds.
-Core Use Cases
-Creating and Managing Concert Events
-Registering and Managing User Accounts
-Booking and Canceling Tickets
-Processing Payments and Issuing Tickets
-Handling Refunds
-UML/Class Diagrams
+1. **Event Management**: Manage concert details including dates, venues, and artists.
+2. **User Account Management**: Handle user registrations and profiles.
+3. **Ticket Booking Process**: Enable users to book tickets and select seats.
+4. **Payment Processing**: Handle ticket payments and issue receipts.
+5. **Ticket Cancellation and Refund**: Manage cancellations and refunds.
+
+## Core Use Cases
+
+1. **Creating and Managing Concert Events**
+2. **Registering and Managing User Accounts**
+3. **Booking and Canceling Tickets**
+4. **Processing Payments and Issuing Tickets**
+5. **Handling Refunds**
+
+## UML/Class Diagrams
+
 Key Classes:
 
-ConcertTicketBookingSystem: Manages the system.
-User: Represents a customer.
-Concert: Represents a concert event.
-Ticket: Manages ticket details.
-Payment: Handles payment transactions.
+- `ConcertTicketBookingSystem`: Manages the system.
+- `User`: Represents a customer.
+- `Concert`: Represents a concert event.
+- `Ticket`: Manages ticket details.
+- `Payment`: Handles payment transactions.
 
 ```cpp
 #include <iostream>
