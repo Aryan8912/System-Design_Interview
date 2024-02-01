@@ -170,6 +170,7 @@ int main() {
 
     return 0;
 }
+```
 
 ```js
 class Ride {
@@ -292,3 +293,4 @@ if (activeRidesDriver2.length > 0) {
 
 rideService.displayRideHistory(user1.getUsername());
 rideService.displayRideHistory(user2.getUsername());
+```
