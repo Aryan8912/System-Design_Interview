@@ -101,3 +101,22 @@ HTTP, which stands for Hypertext Transfer Protocol, is a fundamental protocol of
 7. *HTTPS:* While HTTP is the standard protocol for web communication, it does not provide data encryption or secure data transmission. To address security concerns, HTTPS (HTTP Secure) uses encryption (usually TLS/SSL) to secure data transmitted between the client and server. It's commonly used for secure online transactions, login pages, and any sensitive data transfer.
 
 HTTP is a crucial part of the modern internet, facilitating the exchange of web content, data, and services. It forms the basis for web development and enables users to interact with websites, web applications, APIs, and various online resources.
+
+# CAP Theorem
+The CAP theorem, also known as Brewer's theorem, is a fundamental principle in distributed systems that was formulated by computer scientist Eric Brewer in 2000. The theorem highlights the inherent trade-offs between three desirable properties of a distributed system: Consistency, Availability, and Partition Tolerance. These properties are often referred to as the CAP triad:
+
+1. *Consistency:* In a distributed system, consistency means that all nodes or components in the system see the same data at the same time. In other words, when a write operation is performed, all subsequent read operations should return the updated value. Achieving consistency ensures that the system provides strong data integrity guarantees but may lead to increased latency and decreased availability during network partitions or failures.
+
+2. *Availability:* Availability implies that every request made to a distributed system receives a response, without guaranteeing that the response contains the most up-to-date data. An available system continues to function and respond to requests even if some nodes or components are experiencing failures. High availability is critical for systems that need to remain operational and responsive, but it may result in temporary inconsistencies between nodes.
+
+3. *Partition Tolerance:* Partition tolerance addresses the system's ability to function and maintain its desired properties (consistency and availability) even when network partitions or communication failures occur between nodes. Network partitions can cause some nodes to become unreachable or isolated from the rest of the system. A partition-tolerant system can continue to operate despite these network issues.
+
+The CAP theorem asserts that in a distributed system, you can achieve at most two out of the three properties simultaneously but not all three. Here are the three classic scenarios described by the CAP theorem:
+
+1. *CA (Consistency and Availability):* In this scenario, the system prioritizes both consistency and availability at the expense of partition tolerance. It ensures that all nodes have consistent data and responds to every request, even if it means rejecting requests when a partition occurs. This model is suitable for systems where data consistency is paramount, and it can tolerate temporary unavailability.
+
+2. *CP (Consistency and Partition Tolerance):* In this scenario, the system prioritizes both consistency and partition tolerance at the expense of availability. It guarantees that data remains consistent across all nodes and can handle network partitions, but during a partition, it may choose to become temporarily unavailable to ensure data consistency.
+
+3. *AP (Availability and Partition Tolerance):* In this scenario, the system prioritizes availability and partition tolerance at the expense of strong consistency. It ensures that the system remains available and responsive, even during network partitions, but it may allow some degree of inconsistency between nodes, which can be resolved later.
+
+It's important to note that the CAP theorem provides a framework for understanding trade-offs in distributed systems but does not prescribe a specific choice. The choice between CA, CP, or AP depends on the specific requirements and use cases of the distributed system. Different applications may prioritize different aspects of the CAP triad based on their needs for data consistency, availability, and fault tolerance. Additionally, advancements in distributed database technologies have led to systems that attempt to provide various degrees of consistency, availability, and partition tolerance, blurring the lines between these traditional categories.
