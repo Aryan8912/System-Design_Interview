@@ -1,28 +1,31 @@
-Designing a Hotel Management System
-In this blog post, we will explore the design and implementation of a Hotel Management System (HMS) using object-oriented principles in C++.
+# Designing a Hotel Management System
+
+In this article, we will explore the design and implementation of a Hotel Management System (HMS) using object-oriented principles in C++. 
 
 The HMS is designed to streamline hotel operations including room booking, customer management, and service provision.
 
-System Requirements
+## System Requirements
+
 The HMS will facilitate:
 
-Room Booking Management: Manage bookings for various types of rooms.
-Customer Management: Handle customer information and booking history.
-Room Service Management: Manage orders for food and other services.
-Billing: Generate bills for customers based on their usage of services.
-Core Use Cases
-Booking a Room: Customers can book different types of rooms.
-Managing Customer Profiles: Storing and retrieving customer details.
-Ordering Room Services: Placing orders for room-related services.
-Generating Bills: Calculating and producing bills for customers.
-UML/Class Diagrams
-Key classes in our design:
+1. **Room Booking Management:** Manage bookings for various types of rooms.
+2. **Customer Management:** Handle customer information and booking history.
+3. **Room Service Management:** Manage orders for food and other services.
+4. **Billing:** Generate bills for customers based on their usage of services.
 
-Hotel: Manages the overall hotel operations.
-Room: Represents individual rooms in the hotel.
-Customer: Manages information about customers.
-Booking: Represents a room booking by a customer.
-Service: Represents additional services provided to customers.
+## Core Use Cases
+
+1. **Booking a Room:** Customers can book different types of rooms.
+2. **Managing Customer Profiles:** Storing and retrieving customer details.
+3. **Ordering Room Services:** Placing orders for room-related services.
+4. **Generating Bills:** Calculating and producing bills for customers.
+
+## Key Classes:
+- `Hotel`: Manages the overall hotel operations.
+- `Room`: Represents individual rooms in the hotel.
+- `Customer`: Manages information about customers.
+- `Booking`: Represents a room booking by a customer.
+- `Service`: Represents additional services provided to customers.
 
 ```cpp
 #include <iostream>
