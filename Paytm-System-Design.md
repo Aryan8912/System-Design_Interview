@@ -1,25 +1,30 @@
-Designing a Digital Wallet System
-In this article, we will explore the object-oriented design and implementation of a Digital Wallet System using C++.
+# Designing a Digital Wallet System
+
+In this article, we will explore the object-oriented design and implementation of a Digital Wallet System using C++. 
 
 This system facilitates online transactions, enabling users to store money digitally and make secure payments.
 
-System Requirements
+## System Requirements
+
 The Digital Wallet System should:
 
-User Account Management: Manage user account creation and maintenance.
-Wallet Management: Allow users to add, withdraw, and check balances.
-Transaction Processing: Handle transactions and maintain a history.
-Security and Authentication: Ensure secure access and transaction integrity.
-Core Use Cases
-Creating and Managing User Accounts
-Adding and Withdrawing Funds
-Making and Receiving Payments
-Viewing Transaction History
-Key Classes:
-DigitalWalletSystem: Manages the system.
-User: Represents a user.
-Wallet: Manages a user's wallet.
-Transaction: Represents a transaction.
+1. **User Account Management**: Manage user account creation and maintenance.
+2. **Wallet Management**: Allow users to add, withdraw, and check balances.
+3. **Transaction Processing**: Handle transactions and maintain a history.
+4. **Security and Authentication**: Ensure secure access and transaction integrity.
+
+## Core Use Cases
+
+1. **Creating and Managing User Accounts**
+2. **Adding and Withdrawing Funds**
+3. **Making and Receiving Payments**
+4. **Viewing Transaction History**
+
+## Key Classes:
+- `DigitalWalletSystem`: Manages the system.
+- `User`: Represents a user.
+- `Wallet`: Manages a user's wallet.
+- `Transaction`: Represents a transaction.
 ```cpp
 #include <iostream>
 #include <vector>
