@@ -1,26 +1,31 @@
-Designing a Ride-Sharing Service Like Uber
-This article explores the object-oriented design and implementation of a Ride-Sharing Service similar to Uber using C++.
+# Designing a Ride-Sharing Service Like Uber
+
+This article explores the object-oriented design and implementation of a Ride-Sharing Service similar to Uber using Java. 
 
 We focus on the various aspects of ride-sharing, including user and driver management, ride booking, and fare calculation.
 
-System Requirements
+## System Requirements
+
 The Ride-Sharing Service should:
 
-User and Driver Account Management: Handle the registration and profiles of users and drivers.
-Ride Booking: Enable users to book rides and drivers to accept them.
-Fare Calculation: Compute fares based on distance and other factors.
-Ride History Management: Keep a record of past rides for users and drivers.
-Core Use Cases
-Registering and Managing User and Driver Accounts
-Booking and Managing Rides
-Calculating and Processing Fares
-Maintaining Ride History
-Key Classes:
-RideSharingService: Manages the overall system.
-User: Represents a service user.
-Driver: Represents a driver.
-Ride: Manages ride details.
-FareCalculator: Calculates ride fares.
+1. **User and Driver Account Management**: Handle the registration and profiles of users and drivers.
+2. **Ride Booking**: Enable users to book rides and drivers to accept them.
+3. **Fare Calculation**: Compute fares based on distance and other factors.
+4. **Ride History Management**: Keep a record of past rides for users and drivers.
+
+## Core Use Cases
+
+1. **Registering and Managing User and Driver Accounts**
+2. **Booking and Managing Rides**
+3. **Calculating and Processing Fares**
+4. **Maintaining Ride History**
+
+## Key Classes:
+- `RideSharingService`: Manages the overall system.
+- `User`: Represents a service user.
+- `Driver`: Represents a driver.
+- `Ride`: Manages ride details.
+- `FareCalculator`: Calculates ride fares.
 
 ```cpp
 #include <iostream>
