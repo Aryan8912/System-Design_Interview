@@ -128,6 +128,14 @@ Popular CDN providers include Amazon CloudFront, Akamai, Cloudflare, Fastly, and
 
 CDNs are widely used by websites, e-commerce platforms, media streaming services, and any online service that relies on delivering content quickly and reliably to users across the globe. They are an essential component of modern web infrastructure, helping businesses provide a seamless online experience to their customers.
 
+# Consistency Patterns
+Consistency patterns refer to the ways in which data is stored and managed in a distributed system, and how that data is made available to users and applications. There are three main types of consistency patterns:
+
+Strong consistency
+Weak consistency
+Eventual Consistency
+Each of these patterns has its own advantages and disadvantages, and the choice of which pattern to use will depend on the specific requirements of the application or system.
+
 # HTTP
 HTTP, which stands for Hypertext Transfer Protocol, is a fundamental protocol of the World Wide Web. It is the foundation of data communication on the internet, allowing web browsers (like Chrome, Firefox, and Safari) to retrieve and display web pages and enabling users to interact with web applications and services. Here are some key points about HTTP:
 
