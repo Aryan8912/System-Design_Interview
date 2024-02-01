@@ -1,5 +1,5 @@
 Designing an Online Shopping System Like Amazon
-In this blog post, we're going to design and implement an Online Shopping System resembling Amazon, using Java.
+In this blog post, we're going to design and implement an Online Shopping System resembling Amazon, using C++.
 
 This system will cover product listings, user accounts, shopping carts, and order processing.
 
