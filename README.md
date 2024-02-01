@@ -29,15 +29,16 @@ A load balancer is a critical component in distributed computing and networking 
 
 In summary, load balancers are essential components in distributed systems because they ensure high availability, reliability, and optimal performance by distributing traffic across multiple servers or nodes. They play a crucial role in scaling applications, managing network resources, and providing fault tolerance in modern distributed computing environments.
 
-# KISS Principle in Design
+# Request-Response Pattern
 Request-Response Pattern
 The request-response pattern is a fundamental building block for how the front-end and back-end of web applications chat with each other. This pattern is like a conversation between the client (say your browser) and the server, where they take turns speaking. Imagine it as a “ping-pong” of data.
 
 Here's a diagram illustrating what that looks like:
 
-Untitled-2023-08-13-1619
+![image](https://github.com/Aryan8912/System-Design_Interview/assets/92007507/54c0f0c0-9c14-4fe6-a706-d189fc83c2ee)
+Source: Freecodecamp
+
 request/response communication model
-1*SQDgiDS9Ouqi7tksE9744w
 How does the Request-Response pattern work?
 This pattern is all about synchronization. The client sends a request to the server, kind of like raising your hand to ask a question in class. Then it patiently waits for the server to respond before it can move on.
 
