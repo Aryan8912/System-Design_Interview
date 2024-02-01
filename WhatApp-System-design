@@ -36,50 +36,14 @@ Designing the backend of WhatsApp involves creating a robust and scalable archit
     - Design the system with horizontal scalability in mind to handle increasing user loads.
     - Employ load balancing techniques to distribute traffic evenly across multiple backend servers.
     - Implement fault tolerance measures, such as replication and data backups, to ensure system resilience.
+
+
 ```cpp
 #include <iostream>
 #include <vector>
 #include <unordered_map>
 
-class Message {
-public:
-    std::string sender;
-    std::string content;
-    // Add timestamp and other relevant fields
-
-    Message(const std::string& sender, const std::string& content)
-        : sender(sender), content(content) {}
-};
-
-class Chat {
-public:
-    std::vector<Message> messages;
-
-    void addMessage(const std::string& sender, const std::string& content) {
-        Message message(sender, content);
-        messages.push_back(message);
-    }
-};
-
-class User {
-public:
-    std::string username;
-    std::unordered_map<std::string, Chat> chats;  // Map chat ID to Chat object
-
-    User(const std::string& username) : username(username) {}
-
-    void sendMessage(const std::string& chatId, const std::string& content) {
-        chats[chatId].addMessage(username, content);
-    }
-
-    void printMessages(const std::string& chatId) {
-        std::cout << "Chat ID: " << chatId << "\n";
-        for (const auto& message : chats[chatId].messages) {
-            std::cout << message.sender << ": " << message.content << "\n";
-        }
-        std::cout << "--------\n";
-    }
-};
+// ... Rest of the code goes here
 
 int main() {
     // Example usage
