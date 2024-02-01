@@ -1,28 +1,31 @@
-Designing an Online Shopping System Like Amazon
-In this blog post, we will explore the object-oriented design and implementation of a Restaurant Management System using C++.
+# Designing an Online Shopping System 
+
+In this article, we will explore the object-oriented design and implementation of a Restaurant Management System using C++. 
 
 This system will handle various aspects such as table reservations, order processing, and kitchen management.
 
-System Requirements
+## System Requirements
+
 The Online Shopping System should:
 
-Table Reservation Management: Handle booking and management of tables.
-Order Management: Process food orders from customers.
-Inventory Management: Keep track of kitchen inventory and supplies.
-Billing System: Generate and manage customer bills.
-Core Use Cases
-Reserving Tables
-Placing and Processing Food Orders
-Managing Inventory
-Generating and Processing Bills
-UML/Class Diagrams
-Key Classes:
+1. **Table Reservation Management:** Handle booking and management of tables.
+2. **Order Management:** Process food orders from customers.
+3. **Inventory Management:** Keep track of kitchen inventory and supplies.
+4. **Billing System:** Generate and manage customer bills.
 
-RestaurantManagementSystem: Manages the entire system.
-Table: Represents a dining table in the restaurant.
-Order: Manages a customer's food order.
-Inventory: Keeps track of kitchen inventory.
-Bill: Represents a customer's bill.
+## Core Use Cases
+
+1. **Reserving Tables**
+2. **Placing and Processing Food Orders**
+3. **Managing Inventory**
+4. **Generating and Processing Bills**
+
+## Key Classes:
+- `RestaurantManagementSystem`: Manages the entire system.
+- `Table`: Represents a dining table in the restaurant.
+- `Order`: Manages a customer's food order.
+- `Inventory`: Keeps track of kitchen inventory.
+- `Bill`: Represents a customer's bill.
 
 ```cpp
 #include <iostream>
