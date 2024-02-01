@@ -170,3 +170,125 @@ int main() {
 
     return 0;
 }
+
+```js
+class Ride {
+    constructor(distance, user, driver) {
+        this.distance = distance;
+        this.user = user;
+        this.driver = driver;
+    }
+
+    getDistance() {
+        return this.distance;
+    }
+
+    getUser() {
+        return this.user;
+    }
+
+    getDriver() {
+        return this.driver;
+    }
+}
+
+class FareCalculator {
+    static calculateFare(distance) {
+        const ratePerKm = 0.5;
+        return distance * ratePerKm;
+    }
+}
+
+class User {
+    constructor(username) {
+        this.username = username;
+        this.rides = [];
+    }
+
+    getUsername() {
+        return this.username;
+    }
+
+    bookRide(distance, driver) {
+        this.rides.push(new Ride(distance, this.username, driver));
+        console.log(`Ride booked with driver ${driver}.`);
+    }
+
+    getRideHistory() {
+        return this.rides;
+    }
+}
+
+class Driver {
+    constructor(username) {
+        this.username = username;
+        this.activeRides = [];
+    }
+
+    getUsername() {
+        return this.username;
+    }
+
+    acceptRide(ride) {
+        console.log(`Ride accepted from user ${ride.getUser()}.`);
+        this.activeRides.push(ride);
+    }
+
+    getActiveRides() {
+        return this.activeRides;
+    }
+}
+
+class RideSharingService {
+    constructor() {
+        this.users = {};
+        this.drivers = {};
+    }
+
+    registerUser(username) {
+        this.users[username] = new User(username);
+        return this.users[username];
+    }
+
+    registerDriver(username) {
+        this.drivers[username] = new Driver(username);
+        return this.drivers[username];
+    }
+
+    displayRideHistory(username) {
+        const user = this.users[username];
+        if (user) {
+            console.log(`Ride history for user ${username}:`);
+            for (const ride of user.getRideHistory()) {
+                console.log(`Distance: ${ride.getDistance()} km, Driver: ${ride.getDriver()}`);
+            }
+        } else {
+            console.log("User not found.");
+        }
+    }
+}
+
+const rideService = new RideSharingService();
+
+const user1 = rideService.registerUser("Alice");
+const user2 = rideService.registerUser("Bob");
+const driver1 = rideService.registerDriver("Charlie");
+const driver2 = rideService.registerDriver("David");
+
+user1.bookRide(10, driver1.getUsername());
+user2.bookRide(5, driver2.getUsername());
+
+const activeRidesDriver1 = driver1.getActiveRides();
+if (activeRidesDriver1.length > 0) {
+    const acceptedRide = activeRidesDriver1[0];
+    driver1.acceptRide(acceptedRide);
+}
+
+const activeRidesDriver2 = driver2.getActiveRides();
+if (activeRidesDriver2.length > 0) {
+    const acceptedRide = activeRidesDriver2[0];
+    driver2.acceptRide(acceptedRide);
+}
+
+rideService.displayRideHistory(user1.getUsername());
+rideService.displayRideHistory(user2.getUsername());
