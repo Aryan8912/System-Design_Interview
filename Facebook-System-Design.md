@@ -1,27 +1,30 @@
-Designing a Social Network Like Facebook
-This blog post explores designing and implementing a social network platform similar to Facebook using C++.
+# Designing a Social Network Like Facebook
+
+This article explores designing and implementing a social network platform similar to Facebook using C++. 
 
 We focus on user profiles, friendships, posting updates, and generating a feed of posts.
 
-System Requirements
+## System Requirements
+
 The Social Network platform should support:
 
-User Profile Management: Enabling creation and management of user profiles.
-Friendship Management: Allowing users to connect as friends.
-Posting Updates: Permitting users to post updates and view others' updates.
-Feed Generation: Displaying a feed composed of friends' posts.
-Core Use Cases
-Creating and Updating User Profiles
-Managing Friendships
-Creating Posts
-Viewing the Feed
-UML/Class Diagrams
-Key Classes:
+1. **User Profile Management:** Enabling creation and management of user profiles.
+2. **Friendship Management:** Allowing users to connect as friends.
+3. **Posting Updates:** Permitting users to post updates and view others' updates.
+4. **Feed Generation:** Displaying a feed composed of friends' posts.
 
-SocialNetworkSystem: Manages the overall operations.
-User: Represents a user on the network.
-Post: Represents a user's post.
-Friendship: Manages the friendships between users.
+## Core Use Cases
+
+1. **Creating and Updating User Profiles**
+2. **Managing Friendships**
+3. **Creating Posts**
+4. **Viewing the Feed**
+
+## Key Classes:
+- `SocialNetworkSystem`: Manages the overall operations.
+- `User`: Represents a user on the network.
+- `Post`: Represents a user's post.
+- `Friendship`: Manages the friendships between users.
 
 ```cpp
 #include <iostream>
