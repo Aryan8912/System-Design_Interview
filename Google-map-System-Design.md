@@ -7,7 +7,7 @@ User Profile Management:
 Users can create accounts with details like name, email, and profile pictures.
 Optional: Allow users to set preferences for map themes, favorites, etc.
 
-## Updating User Profiles:
+# Updating User Profiles:
 
 Users can update their profiles, including changing profile pictures or updating personal information.
 
@@ -31,7 +31,9 @@ Users can search for places, addresses, or points of interest on the map.
 ## Favorite Places:
 
 Allow users to save favorite locations and view them on the map.
-Core Use Cases:
+
+# Core Use Cases:
+
 ## User Registration:
 
 Users can create accounts with a unique username, email, and password.
@@ -57,28 +59,31 @@ Users can input starting and destination points to get directions and view recom
 ## Search for Places:
 
 Users can search for places, addresses, or points of interest on the map.
-Save Favorite Places:
+## Save Favorite Places:
 
 Users can save favorite locations and view them later on the map.
-Key Classes:
-MapSystem:
+# Key Classes:
+## MapSystem:
 
 Manages the overall map-related operations.
 Coordinates interactions between different components.
-User:
+## User:
 
 Represents a user account with attributes like username, email, and profile information.
 Contains methods for creating, updating, and viewing profiles.
-LocationSharingService:
+## LocationSharingService:
 
 Manages the real-time location sharing functionality.
-RoutePlanningService:
+
+## RoutePlanningService:
 
 Handles route planning, directions, and recommended routes.
-SearchService:
+
+## SearchService:
 
 Implements search functionality for places, addresses, and points of interest.
-FavoritePlacesManager:
+
+## FavoritePlacesManager:
 
 Manages the saving and viewing of favorite locations.
 
