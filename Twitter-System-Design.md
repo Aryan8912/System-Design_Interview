@@ -1,4 +1,6 @@
-# Designing the system for creating and reading tweets in a Twitter-like application involves several components. Here's an overview of the key ## components and their functionalities:
+# Designing the system for creating and reading tweets in a Twitter-like application involves several components. Here's an overview of the key 
+
+## components and their functionalities:
 
 1. **User Interface and Frontend:**
 - Develop a user-friendly web or mobile interface for users to create and read tweets.
