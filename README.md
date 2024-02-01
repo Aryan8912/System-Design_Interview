@@ -120,3 +120,95 @@ The CAP theorem asserts that in a distributed system, you can achieve at most tw
 3. *AP (Availability and Partition Tolerance):* In this scenario, the system prioritizes availability and partition tolerance at the expense of strong consistency. It ensures that the system remains available and responsive, even during network partitions, but it may allow some degree of inconsistency between nodes, which can be resolved later.
 
 It's important to note that the CAP theorem provides a framework for understanding trade-offs in distributed systems but does not prescribe a specific choice. The choice between CA, CP, or AP depends on the specific requirements and use cases of the distributed system. Different applications may prioritize different aspects of the CAP triad based on their needs for data consistency, availability, and fault tolerance. Additionally, advancements in distributed database technologies have led to systems that attempt to provide various degrees of consistency, availability, and partition tolerance, blurring the lines between these traditional categories.
+
+# SQL VS NO SQL Database
+Choosing between SQL (Structured Query Language) databases and NoSQL databases depends on various factors including the nature of your data, scalability needs, and the specific requirements of your application. Here are some key considerations to help decide when to use each:
+
+SQL Databases
+1. **Structured Data**: Best for handling structured data with a fixed schema, such as customer information in a CRM system.
+2. **Complex Queries**: Ideal for complex query requirements. SQL databases excel in powerful query languages that can handle complex joins and transactions.
+3. **ACID Transactions**: Suitable for applications that require Atomicity, Consistency, Isolation, and Durability (ACID) in transactions, like banking or financial applications.
+4. **Relational Data**: If your data is heavily interrelated and you need to maintain those relationships, SQL is typically a better choice.
+5. **Stability and Maturity**: SQL databases, such as MySQL and PostgreSQL, are mature technologies with a wealth of support and documentation.
+6. **Reporting and Analysis**: Better for scenarios where you need to perform in-depth analysis and generate reports.
+
+NoSQL Databases
+1. **Unstructured or Semi-Structured Data**: Ideal for unstructured or semi-structured data, such as JSON, XML, and other document formats.
+2. **Scalability**: More suitable for applications that require horizontal scalability, as they are designed to expand easily across multiple servers.
+3. **High-Volume Data**: Better for handling large volumes of data at high speed, like real-time analytics or big data applications.
+4. **Flexible Schema**: Useful when you have rapidly changing schemas or when you want to iterate quickly without having to migrate a database schema.
+5. **Variety of Data Types**: They support a wide range of data types and structures, such as key-value, document, columnar, and graph databases.
+6. **Simplicity and Speed**: Generally simpler and can offer higher write and read speeds for certain workloads.
+
+Considerations
+- **Consistency Requirements**: SQL databases often offer stronger consistency models compared to NoSQL databases.
+- **Skill Set**: Consider the expertise available in your team. SQL is a widely known language, whereas NoSQL databases might require additional learning.
+- **Vendor Lock-In**: Some NoSQL databases are proprietary, which might lead to vendor lock-in.
+- **Cost**: Evaluate the total cost of ownership, including licensing, maintenance, and scaling costs.
+
+In summary, use SQL when you need to work with structured data with complex relationships and require strong transactional integrity. Opt for NoSQL when dealing with large volumes of diverse, unstructured, or semi-structured data and when you need high throughput and horizontal scalability. Often, the choice isn't strictly binary; many modern applications use a combination of both SQL and NoSQL databases to meet their diverse data needs.
+
+# Token Bucket Algorithm
+
+The Token Bucket Algorithm is a popular method for controlling the rate at which events occur in distributed systems, particularly in scenarios where events or requests need to be limited to a specified rate. It's commonly used for rate limiting, traffic shaping, and ensuring that a system does not exceed a defined rate or burstiness of events. Here's how the Token Bucket Algorithm works:
+
+1. *Token Bucket:* Imagine a bucket that gets filled with tokens at a fixed rate. These tokens represent permission or credit to perform an action or event. The bucket has a maximum capacity, and any tokens beyond this capacity are discarded.
+
+2. *Token Generation:* Tokens are generated at a constant rate and added to the bucket. For example, if you want to allow 10 requests per second, you might add one token every 100 milliseconds.
+
+3. *Request Processing:* When an event or request arrives, it must consume one or more tokens from the bucket to proceed. If there are not enough tokens available, the event is delayed until there are sufficient tokens or discarded if the bucket is empty.
+
+4. *Bucket Capacity:* The bucket has a maximum capacity that limits the number of tokens it can hold. Tokens added to a full bucket are simply discarded.
+
+Key Characteristics and Advantages:
+
+- *Rate Control:* The Token Bucket Algorithm provides precise control over the rate at which events or requests are allowed to occur.
+
+- *Burst Handling:* The algorithm can handle bursts of traffic efficiently. If tokens accumulate in the bucket, short bursts of events can be accommodated.
+
+- *Simplicity:* It's a straightforward algorithm to implement and understand, making it a popular choice for rate limiting.
+
+- *Predictable Behavior:* The Token Bucket Algorithm ensures a predictable and stable rate of event processing, which can be beneficial for system stability.
+
+- *Adaptability:* By adjusting the token generation rate or bucket capacity, you can easily adapt the algorithm to different rate-limiting requirements.
+
+- *Enforcement:* It enforces rate limits effectively, preventing excessive resource consumption or abuse of a service.
+
+Use Cases:
+
+1. *API Rate Limiting:* Many APIs use the Token Bucket Algorithm to limit the number of requests a user or client can make within a certain time frame.
+
+2. *Traffic Shaping:* Network devices use token buckets to shape traffic, ensuring that data flows conform to a specified rate or burstiness.
+
+3. *Distributed Systems:* Token buckets are employed in distributed systems to control the rate of events or messages exchanged between nodes.
+
+4. *Resource Allocation:* It can be used to allocate resources, such as CPU time or bandwidth, among competing processes or users.
+
+In summary, the Token Bucket Algorithm is a valuable tool for controlling the rate of events in distributed systems, ensuring that they stay within defined limits and preventing overuse of resources. It provides predictable and stable rate limiting, making it suitable for various rate control scenarios.
+
+# Round Robin Load Balancing
+Round Robin is a straightforward and widely used load balancing algorithm that distributes incoming network requests or tasks evenly among a group of backend servers or resources. It's a simple algorithm that ensures that each server in the pool gets a turn to handle a request in a cyclic or circular fashion. Here's how Round Robin load balancing works:
+
+1. *Server List:* The load balancer maintains a list of available servers that can handle incoming requests. These servers are typically identical in terms of capacity and capabilities.
+
+2. *Request Arrival:* When a new request arrives at the load balancer, it needs to be directed to one of the servers in the list.
+
+3. *Server Selection:* The load balancer selects the next server from the list to handle the request. It follows a cyclical pattern, meaning that it starts from the beginning of the list and goes through the servers in order.
+
+4. *Request Forwarding:* The selected server is then assigned the incoming request to process. The load balancer forwards the request to the chosen server.
+
+5. *Rotation:* After handling a request, the selected server moves to the end of the server list. The next request will be directed to the server that follows it in the list. This rotation continues for each incoming request.
+
+Key characteristics and considerations of Round Robin load balancing:
+
+- *Even Distribution:* Round Robin ensures that requests are distributed evenly among the servers. Each server gets an equal share of incoming traffic, preventing overloading of any one server.
+
+- *Simplicity:* Round Robin is straightforward to implement and doesn't require complex algorithms or state tracking. It's easy to understand and manage.
+
+- *No Server State Consideration:* Round Robin does not take into account the current load or performance of each server. It treats all servers equally and doesn't consider factors like server health or response times.
+
+- *Predictable Behavior:* Since the distribution pattern is deterministic, you can predict which server will handle the next request in the rotation.
+
+Round Robin load balancing is suitable for scenarios where servers are relatively homogeneous in terms of capacity and performance, and where simplicity and equal distribution are more important than advanced load balancing considerations. However, it may not be the best choice in situations where server capacities vary significantly or when you want to consider server health, response times, or load before distributing traffic. In such cases, more advanced load balancing algorithms, such as weighted Round Robin or least connections, may be used.
+
+Overall, Round Robin load balancing is a reliable and easy-to-implement approach that is commonly used in various network and web hosting setups to distribute traffic among a group of servers.
