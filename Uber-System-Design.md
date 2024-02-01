@@ -1,6 +1,6 @@
 # Designing a Ride-Sharing Service Like Uber
 
-This article explores the object-oriented design and implementation of a Ride-Sharing Service similar to Uber using Java. 
+This article explores the object-oriented design and implementation of a Ride-Sharing Service similar to Uber using C++. 
 
 We focus on the various aspects of ride-sharing, including user and driver management, ride booking, and fare calculation.
 
