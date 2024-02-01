@@ -2,7 +2,11 @@
 
 Hi my Fellow Developers this repo is for all you need to know about System Design if you read this repo you will be a master in System Design
 
-# Design Pattern https://github.com/Aryan8912/System-Design_Interview/blob/main/Design-Pattern.md
+# Design Pattern 
+https://github.com/Aryan8912/System-Design_Interview/blob/main/Design-Pattern.md
+
+# Unified Modeling Language (UML) Diagrams
+https://github.com/Aryan8912/System-Design_Interview/blob/main/Unified-Modeling-Language-(UML)-Diagrams.md
 
 # Load Balancer
 A load balancer is a critical component in distributed computing and networking that plays a central role in distributing incoming network traffic or requests across multiple servers or nodes in a way that optimizes resource utilization, maximizes throughput, minimizes response time, and ensures high availability and reliability. Load balancers are essential for several reasons in distributed systems:
