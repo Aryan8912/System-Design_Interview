@@ -1,28 +1,31 @@
-Designing a Professional Networking Platform like LinkedIn
-In this blog post, we delve into the object-oriented design and implementation of a professional networking platform like LinkedIn, using Java.
+# Designing a Professional Networking Platform like LinkedIn
+
+In this article, we delve into the object-oriented design and implementation of a professional networking platform like LinkedIn, using C++. 
 
 The focus is on user profiles, connections, job postings, and feed interactions.
 
-System Requirements
+## System Requirements
+
 The platform should facilitate:
 
-User Profile Management: Creation and management of user profiles.
-Connection Management: Enable users to connect with each other.
-Job Posting and Application: Facilitate posting job listings and applying for them.
-Feed and Postings: Display a feed of posts and activities from connections.
-Core Use Cases
-Creating and Updating User Profiles
-Adding and Managing Connections
-Posting and Applying for Jobs
-Viewing and Creating Posts in the Feed
-UML/Class Diagrams
-Key Classes:
+1. **User Profile Management:** Creation and management of user profiles.
+2. **Connection Management:** Enable users to connect with each other.
+3. **Job Posting and Application:** Facilitate posting job listings and applying for them.
+4. **Feed and Postings:** Display a feed of posts and activities from connections.
 
-LinkedInSystem: Manages the overall system operations.
-User: Represents a user profile.
-Connection: Manages user connections.
-Job: Represents a job listing.
-Post: Represents a post in the user feed.
+## Core Use Cases
+
+1. **Creating and Updating User Profiles**
+2. **Adding and Managing Connections**
+3. **Posting and Applying for Jobs**
+4. **Viewing and Creating Posts in the Feed**
+
+## Key Classes:
+- `LinkedInSystem`: Manages the overall system operations.
+- `User`: Represents a user profile.
+- `Connection`: Manages user connections.
+- `Job`: Represents a job listing.
+- `Post`: Represents a post in the user feed.
 
 ```cpp
 #include <iostream>
