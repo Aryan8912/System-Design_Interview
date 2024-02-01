@@ -953,8 +953,10 @@ Database replication involves creating and maintaining multiple copies (replicas
 
 # Microservices Architecture
 Background
+
 In many systems design questions, you will have to design a good amount of functionality for some hypothetical use case.  Typically, it makes sense to split each piece of function into separate microservices, which act as self contained units of servers that can interact with other microservices as if they were external services.  
 Original Approach: Monoliths
+
 All code contained in the same repository, same set of nodes in a cluster responsible for handling any possible application request.
 Benefits of a Monolith Approach
 Easy to implement
