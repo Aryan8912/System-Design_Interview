@@ -29,6 +29,50 @@ A load balancer is a critical component in distributed computing and networking 
 
 In summary, load balancers are essential components in distributed systems because they ensure high availability, reliability, and optimal performance by distributing traffic across multiple servers or nodes. They play a crucial role in scaling applications, managing network resources, and providing fault tolerance in modern distributed computing environments.
 
+# KISS Principle in Design
+Request-Response Pattern
+The request-response pattern is a fundamental building block for how the front-end and back-end of web applications chat with each other. This pattern is like a conversation between the client (say your browser) and the server, where they take turns speaking. Imagine it as a “ping-pong” of data.
+
+Here's a diagram illustrating what that looks like:
+
+Untitled-2023-08-13-1619
+request/response communication model
+1*SQDgiDS9Ouqi7tksE9744w
+How does the Request-Response pattern work?
+This pattern is all about synchronization. The client sends a request to the server, kind of like raising your hand to ask a question in class. Then it patiently waits for the server to respond before it can move on.
+
+It’s like a polite conversation — one speaks, the other listens, and then they swap roles.
+
+You’ve probably heard of RESTful APIs, right? Well, they’re a prime example of the request-response model in action.
+
+When your app needs some data or wants to do something on the server, it crafts an HTTP request — say GET, POST, PUT, or DELETE (like asking nicely for a page), and sends it to specific endpoints (URLs) on the server. The server then processes your request and replies with the data you need or performs the requested action.
+
+It’s like ordering your favorite dish from a menu — you ask, and the kitchen (server) cooks it up for you.
+
+Interestingly, there’s more than one way to have this conversation. Besides REST, there’s GraphQL, an alternative that lets you ask for exactly the data you want. It’s like customizing your order at a restaurant — you get to pick and choose your ingredients.
+
+It’s important to note that this pattern isn’t just limited to web applications. You’ll spot it in Remote Procedure Calls (RPCs), database queries (with the server being the client and the database, the server), and network protocols (HTTP, SMTP, FTP) to name a few. It’s like the language of communication for the web.
+
+Benefits of the Request-Response pattern
+Ease of Implementation and Simplicity: The way communication flows in this model is pretty straightforward, making it a go-to choice for many developers, especially when they’re building apps with basic interaction needs.
+
+Flexibility and Adaptability (One Size Fits Many): The request-response pattern seamlessly fits into a wide range of contexts. You can use it for making API calls, rendering web pages on the server, fetching data from databases, and more.
+
+Scalability: Each request from the client is handled individually, so the server can easily manage multiple requests at once. This is highly beneficial for high-traffic websites, APIs that get tons of calls, or cloud-based services.
+
+Reliability: Since the server always sends back a response, the client can be sure its request is received and processed. This helps maintain data consistency and ensures that actions have been executed as intended even during high-traffic scenarios.
+
+Ease of Debugging: If something goes wrong, the server kindly sends an error message with a status code stating what happened. This makes error handling easy.
+
+Limitations of the Request-Response Pattern
+Latency Problem: Because it’s a back-and-forth conversation, there’s often a waiting period. This amounts to idle periods and amplifies latency, especially when the request requires the server to perform time-consuming computing tasks.
+
+Data Inconsistency in Case of Failures: If a failure occurs after the server has processed the request but before the response is delivered to the client, data inconsistency may result.
+
+Complexity in Real-Time Communication: For applications that need lightning-fast real-time communication (like live streaming, gaming, or chat apps), this pattern can introduce delays and is therefore unsuitable for these use-cases.
+
+Inefficiency in Broadcasting: In scenarios where you need to send the same data to multiple clients at once (broadcast), this pattern can be a bit inefficient. It’s like mailing individual letters instead of sending one group message.
+
 # ACID Properties in System Design:
 ACID properties are a set of principles that guarantee reliable processing of database transactions. They are crucial for ensuring data integrity and consistency in relational databases, especially in the presence of errors, power failures, and other anomalies. ACID stands for Atomicity, Consistency, Isolation, and Durability.
 
