@@ -1,27 +1,31 @@
-Designing an Online Auction System
-In this article, we delve into the object-oriented design and implementation of an Online Auction System using Java.
+# Designing an Online Auction System
+In this article, we delve into the object-oriented design and implementation of an Online Auction System using C++. 
 
 This system allows for the creation and management of auctions, user participation in bidding, and handling transactions.
 
-System Requirements
+## System Requirements
+
 The Online Auction System should:
 
-Auction Management: Create and manage auctions with item details, starting prices, and durations.
-User Account Management: Handle user registrations for sellers and bidders.
-Bidding Process: Allow users to place and track bids.
-Auction Monitoring: Enable users to view ongoing auctions and status.
-Transaction Processing: Handle winning bid transactions.
-Core Use Cases
-Creating and Managing Auctions
-Registering and Managing User Accounts
-Placing and Tracking Bids
-Monitoring Auction Progress
-Processing Transactions
-Key Classes:
-OnlineAuctionSystem: Manages the system.
-User: Represents a system user.
-Auction: Manages auction details.
-Bid: Represents a user's bid.
+1. **Auction Management**: Create and manage auctions with item details, starting prices, and durations.
+2. **User Account Management**: Handle user registrations for sellers and bidders.
+3. **Bidding Process**: Allow users to place and track bids.
+4. **Auction Monitoring**: Enable users to view ongoing auctions and status.
+5. **Transaction Processing**: Handle winning bid transactions.
+
+## Core Use Cases
+
+1. **Creating and Managing Auctions**
+2. **Registering and Managing User Accounts**
+3. **Placing and Tracking Bids**
+4. **Monitoring Auction Progress**
+5. **Processing Transactions**
+
+## Key Classes:
+- `OnlineAuctionSystem`: Manages the system.
+- `User`: Represents a system user.
+- `Auction`: Manages auction details.
+- `Bid`: Represents a user's bid.
 ```cpp
 #include <iostream>
 #include <vector>
