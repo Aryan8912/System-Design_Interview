@@ -1,30 +1,36 @@
-Designing an Online Music Streaming Service Like Spotify
-This article focuses on developing an object-oriented design for an Online Music Streaming Service similar to Spotify using C++.
+# Designing an Online Music Streaming Service Like Spotify
+
+This article focuses on developing an object-oriented design for an Online Music Streaming Service similar to Spotify using C++. 
 
 The system aims to deliver a comprehensive music streaming experience.
 
-System Requirements
+## System Requirements
+
 The Online Music Streaming Service should:
 
-User Account Management: Manage user registrations, profiles, and subscriptions.
-Music Library Management: Maintain a library of songs, artists, and albums.
-Streaming and Playback: Enable streaming of music and manage playback settings.
-Playlist Management: Allow users to create and manage personalized playlists.
-User Recommendation System: Offer music suggestions based on preferences and listening history.
-Core Use Cases
-Registering and Managing User Accounts
-Browsing and Streaming Music
-Creating and Editing Playlists
-Recommending Music
-Handling Subscriptions and Payments
-UML/Class Diagrams
+1. **User Account Management**: Manage user registrations, profiles, and subscriptions.
+2. **Music Library Management**: Maintain a library of songs, artists, and albums.
+3. **Streaming and Playback**: Enable streaming of music and manage playback settings.
+4. **Playlist Management**: Allow users to create and manage personalized playlists.
+5. **User Recommendation System**: Offer music suggestions based on preferences and listening history.
+
+## Core Use Cases
+
+1. **Registering and Managing User Accounts**
+2. **Browsing and Streaming Music**
+3. **Creating and Editing Playlists**
+4. **Recommending Music**
+5. **Handling Subscriptions and Payments**
+
+## UML/Class Diagrams
+
 Key Classes:
 
-MusicStreamingService: Manages the system.
-User: Represents a subscriber.
-Song: Represents an individual music track.
-Playlist: Manages a collection of songs.
-Subscription: Handles subscription details.
+- `MusicStreamingService`: Manages the system.
+- `User`: Represents a subscriber.
+- `Song`: Represents an individual music track.
+- `Playlist`: Manages a collection of songs.
+- `Subscription`: Handles subscription details.
 ```cpp
 #include <iostream>
 #include <vector>
