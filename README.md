@@ -1196,3 +1196,47 @@ All these features of HTTP/2 enable gRPC to use fewer resources, resulting in re
 
 Channels
 Channels are a core concept in gRPC. The HTTP/2 streams allow many simultaneous streams on one connection; channels extend this concept by supporting multiple streams over multiple concurrent connections. They provide a way to connect to the gRPC server on a specified address and port and are used in creating a client stub.
+
+# Cassandra
+Cassandra is a NoSQL, wide column database designed for both high read and write throughput.  It was first created at Facebook, and then has since become open source under the apache license.
+In these slides, we will see how it achieves this, as well as some of the best use cases for the technology.
+
+Recall: The reason that SQL databases tend to scale poorly are that many operations touch multiple partitions due to the tendency to have highly related data.
+Instead, Cassandra has opted to optimize for single partition writes and reads, and make those very fast.  Because it is NoSQL, the hope is that you can store all relevant information in one single row within a partition.
+
+Cassandra is a wide column database - rows of a table can have any number and type of columns, but they all must contain one primary key known as the partition key.  Additionally, it can designate other rows of the row to be known as clustering keys.
+
+As opposed to many traditional SQL databases (which use B-trees), Cassandra uses an LSM tree + SSTable based storage engine.
+Recall:
+Writes are extremely fast as they are first sent to memory
+Depending on how often log compaction is performed, frequent updates or deletes of a row can take up a lot of extra disk space
+The performance of reads can be a bit slower if you need to search for a key through the SSTables
+However, Cassandra uses bloom filters as an optimization (approximates the contents of a set)
+
+As we might expect, Cassandra uses the partitioning key, in conjunction with consistent hashing, to determine which replica to send a given row to.  Each shard is replicated, with the number of replicas specified by the user.
+
+Dynamo style database: all writes are sent to every single replica for a given partition, and the administrator can choose how many replicas need to respond with a success before returning a success to the client (can use quorums).  This means that there will inevitably be conflicting writes:
+Handle conflicts using last write wins
+Requires keeping server clocks close to in sync via something like NTP, will be lost data
+Read repair on reads, if client sees a replica with an outdated value it will update it
+Anti-entropy process running in background ensures eventual consistency of replicas
+
+Note: if for some reason replicas cannot handle writes in a given moment, the coordinator will store the write to be sent to them later, and then perform a hinted handoff.
+
+Data stored on replicas
+Each replica added should allow read and write throughput to scale linearly
+Choose replication topology, number of replicas in addition to location such as different rack or data center
+Faults detected via gossip protocol
+Nodes keep track of heartbeats received by other nodes in the cluster and their timestamp and send these via gossip, if a node has not gossipped in a long time it is presumed dead
+
+Cassandra uses the clustering keys to create indexes of the data within a partition - note that these are only local indexes, not global indexes.  If you have many clustering keys in order to achieve multiple different sort orders, Cassandra will denormalize the data such that it keeps two copies of it, slows down writes.
+
+WRITE HEAVY APPLICATIONS!!!
+If data is generally self contained, and only needs to be fetched with other data from its partition.
+Examples: sensor readings, chat messages, user activity tracking
+
+Great for write heavy applications for millions or even billions of users with performance as the main concern
+See messaging, sensor readings, activity tracking
+Main pitfalls are the lack of strong consistency, lack of ability to support data relationships (outside of sorting data in a given partition), lack of global secondary indexes
+In these scenarios we will need other options!
+
