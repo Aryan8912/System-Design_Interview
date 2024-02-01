@@ -1,68 +1,85 @@
-# 
+# Designing dating app like Tinder 
 
-System Requirements:
+## System Requirements:
 User Profile Management:
 
-Creating User Profiles:
+1. **Creating User Profiles:**
 
 Users should be able to create profiles with details like pictures, bio, and interests.
 Include options for relationship preferences.
-Updating User Profiles:
+
+2. **Updating User Profiles:**
 
 Users can update their profile information, including photos and bio.
 Provide options for users to modify their relationship preferences.
-Viewing User Profiles:
+
+3. **Viewing User Profiles:**
 
 Users should be able to view profiles of others.
 Profiles may include pictures, bio, interests, and relationship preferences.
-Matching and Connection:
+
+4. **Matching and Connection:**
 
 Implement a mechanism for users to express interest in others.
 Users can connect or match if interest is mutual.
-Core Use Cases:
-User Registration:
+
+## Core Use Cases:
+
+1. **User Registration:**
 
 Users can create an account with details like name, age, photos, and interests.
 Include options to set relationship preferences.
-User Authentication:
+
+2. **User Authentication:**
 
 Securely authenticate users during login.
-Profile Creation:
+
+3. **Profile Creation:**
 
 Allow users to create a profile with pictures, bio, and interests.
 Specify relationship preferences (e.g., seeking men, women, both).
-Profile Update:
+
+4. **Profile Update:**
 
 Enable users to update their profiles, including adding/removing pictures and modifying bio.
-Profile Viewing:
+
+5. **Profile Viewing:**
 
 Users can view profiles of others, including pictures and bio.
-Expressing Interest:
+
+6. **Expressing Interest:**
 
 Implement features like swiping right to express interest in another user's profile.
-Matching:
+
+7. **Matching:**
 
 If two users express mutual interest, create a match and notify both users.
-Messaging (Optional):
+
+8. **Messaging (Optional):**
 
 Allow matched users to communicate through a messaging system.
-Key Classes:
-DatingAppSystem:
+
+## Key Classes:
+
+1. **DatingAppSystem:**
 
 Manages the overall operations of the dating app.
 Coordinates interactions between different components.
-User:
+
+2. **User:**
 
 Represents a user account with attributes like name, age, and interests.
 Contains methods for creating, updating, and viewing profiles.
-UserProfile:
+
+3. **UserProfile:**
 
 Manages the details of a user's profile, including pictures, bio, and interests.
 Associated with the User class.
-MatchingSystem:
+4. **MatchingSystem:**
 
 Handles the logic for expressing interest, matching, and connecting users.
-AuthenticationManager:
+
+5. **AuthenticationManager:**
 
 Handles user authentication during login.
 Validates the user's credentials.
