@@ -11,7 +11,7 @@ Types of Software Design Patterns
 
 ## Builder Method Design Pattern
 
-## Structural Design Patterns
+# Structural Design Patterns
 
 ## Adapter Method Design Patterns
 
