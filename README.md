@@ -49,3 +49,30 @@ ACID properties are a set of principles that guarantee reliable processing of da
 - *In Practice:* After a transaction is completed and the changes are committed to the database, these changes are permanently recorded and will not be lost even if the system crashes immediately afterward.
 
 Understanding ACID properties is essential in system design, particularly for applications that require high reliability and data integrity. SQL databases, like PostgreSQL, MySQL, Oracle, and SQL Server, are designed to provide these ACID guarantees, ensuring that transactions are processed reliably. This makes them suitable for a wide range of applications, including financial systems, e-commerce platforms, and any other system where data accuracy and consistency are crucial.
+
+# Content Delivery Network (CDN)
+A Content Delivery Network (CDN) is a distributed network of servers strategically located in various data centers around the world. The primary purpose of a CDN is to deliver web content, such as text, images, videos, scripts, and other media files, to end-users in a faster, more efficient, and reliable manner. CDNs offer several advantages, including:
+
+1. *Reduced Latency:* CDNs cache content on servers that are geographically closer to end-users. This proximity reduces the time it takes for content to travel over the internet, significantly lowering latency and improving website loading times.
+
+2. *Improved Performance:* Faster loading times lead to a better user experience. Websites and applications served through CDNs are more responsive, resulting in higher user engagement and satisfaction.
+
+3. *Scalability:* CDNs distribute the load across multiple servers, making it easier to handle high levels of traffic and sudden spikes in demand. This scalability is essential for websites and applications with varying traffic patterns.
+
+4. *Load Balancing:* CDNs often include load balancing mechanisms that route user requests to the nearest and least congested server, ensuring efficient content delivery and optimal performance.
+
+5. *Distributed Redundancy:* CDNs replicate content on multiple servers in different locations. This redundancy enhances reliability and fault tolerance. If one server fails or experiences issues, traffic is automatically redirected to another server with the same content.
+
+6. *Security:* CDNs offer security features like Distributed Denial of Service (DDoS) protection, Web Application Firewall (WAF) services, and SSL/TLS encryption to safeguard websites and applications from various threats and attacks.
+
+7. *Bandwidth Savings:* CDNs help reduce the load on origin servers by serving cached content. This saves bandwidth and reduces hosting costs, especially for websites with extensive media content.
+
+8. *Global Reach:* CDNs have a vast network of servers worldwide, ensuring that content is readily available to users regardless of their geographical location. This is crucial for serving a global audience.
+
+9. *Analytics and Reporting:* Many CDNs provide analytics and reporting tools that offer insights into user behavior, traffic patterns, and performance metrics. This information can help optimize content delivery strategies.
+
+10. *Support for Mobile Devices:* CDNs are equipped to deliver content efficiently to various devices, including desktops, smartphones, tablets, and IoT devices, ensuring a consistent user experience across platforms.
+
+Popular CDN providers include Amazon CloudFront, Akamai, Cloudflare, Fastly, and others. Implementing a CDN typically involves configuring your domain's DNS settings to point to the CDN's servers and configuring caching and delivery rules.
+
+CDNs are widely used by websites, e-commerce platforms, media streaming services, and any online service that relies on delivering content quickly and reliably to users across the globe. They are an essential component of modern web infrastructure, helping businesses provide a seamless online experience to their customers.
