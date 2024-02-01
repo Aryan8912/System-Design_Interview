@@ -1,28 +1,31 @@
-Designing an Online Stock Brokerage System
-In this blog post, we'll examine the object-oriented design and implementation of an Online Stock Brokerage System using C++.
+# Designing an Online Stock Brokerage System
+
+In this article, we'll examine the object-oriented design and implementation of an Online Stock Brokerage System using Java. 
 
 This system simulates key functionalities of stock trading platforms, enabling users to engage in buying and selling stocks, manage their portfolios, and stay updated with stock prices.
 
-System Requirements
+## System Requirements
+
 The Stock Brokerage System needs to:
 
-User Account Management: Manage user registrations and profiles.
-Stock Trading: Enable stock buying and selling.
-Portfolio Management: Allow users to manage their stock holdings.
-Stock Price Feed: Provide real-time stock price updates.
-Core Use Cases
-Registering and Managing User Accounts
-Buying and Selling Stocks
-Managing Portfolio
-Viewing Stock Prices
-UML/Class Diagrams
-Key Classes:
+1. **User Account Management:** Manage user registrations and profiles.
+2. **Stock Trading:** Enable stock buying and selling.
+3. **Portfolio Management:** Allow users to manage their stock holdings.
+4. **Stock Price Feed:** Provide real-time stock price updates.
 
-StockBrokerageSystem: Manages the entire system.
-User: Represents a system user.
-Stock: Represents a stock in the market.
-Portfolio: Manages a user's stock holdings.
-Trade: Handles stock trade transactions.
+## Core Use Cases
+
+1. **Registering and Managing User Accounts**
+2. **Buying and Selling Stocks**
+3. **Managing Portfolio**
+4. **Viewing Stock Prices**
+
+## Key Classes:
+- `StockBrokerageSystem`: Manages the entire system.
+- `User`: Represents a system user.
+- `Stock`: Represents a stock in the market.
+- `Portfolio`: Manages a user's stock holdings.
+- `Trade`: Handles stock trade transactions.
 
 ```cpp
 #include <iostream>
