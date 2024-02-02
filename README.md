@@ -8,6 +8,47 @@ https://github.com/Aryan8912/System-Design_Interview/blob/main/Design-Pattern.md
 # Unified Modeling Language (UML) Diagrams
 https://github.com/Aryan8912/System-Design_Interview/blob/main/Unified-Modeling-Language-(UML)-Diagrams.md
 
+# When to Choose Horizontal Over Vertical Scaling
+
+Horizontal scaling and vertical scaling are two strategies for increasing the capacity and performance of a system, but they approach the task in different ways. Understanding the differences is crucial for making informed decisions in system design and infrastructure planning.
+
+**Horizontal Scaling (Scaling Out):**
+
+1. **Definition:** Involves adding more machines or nodes to a system to distribute the load. Each node typically has similar hardware and runs the same software.
+
+2. **Scalability:** Offers potentially unlimited scalability since you can continually add new machines as your workload grows.
+
+3. **Fault Tolerance:** Improves fault tolerance. If one node fails, other nodes can continue to handle the workload.
+
+4. **Complexity:** Requires a system architecture that supports distributed computing, which can be more complex to implement and manage. It involves challenges like data synchronization, load balancing, and ensuring consistency.
+
+5. **Cost:** Initial cost can be lower, especially if using cloud services where you can add and remove resources as needed. However, managing a distributed system can increase operational costs.
+
+6. **Use Cases:** Ideal for web applications, large databases, and services with fluctuating workloads.
+
+**Vertical Scaling (Scaling Up):**
+
+1. **Definition:** Involves upgrading the existing machine with more powerful hardware, such as a faster CPU, more RAM, or increased storage capacity.
+
+2. **Scalability:** Limited by the maximum capacity of a single machine. There's a physical limit to how much a single server can be upgraded.
+
+3. **Fault Tolerance:** Does not inherently improve fault tolerance. If the single, more powerful server fails, the entire system can go down.
+
+4. **Complexity:** Generally simpler to implement as it doesn't require changes to the software architecture. It's about making the existing machine more powerful.
+
+5. **Cost:** Can be cost-effective for small to medium-sized applications but becomes expensive and less feasible as you approach hardware limits.
+
+6. **Use Cases:** Suitable for applications with consistent workloads or where data and application distribution is complex or unnecessary.
+
+**Comparison:**
+
+- **Scalability:** Horizontal scaling offers more potential scalability compared to vertical scaling.
+- **Fault Tolerance:** Horizontal scaling can provide better fault tolerance and high availability.
+- **Cost and Complexity:** Vertical scaling is simpler and potentially cheaper for small to medium workloads, but horizontal scaling offers better flexibility and performance for larger, more dynamic workloads.
+- **Implementation:** Vertical scaling is often easier to implement as it requires fewer architectural changes, while horizontal scaling requires a distributed system design.
+
+In summary, the choice between horizontal and vertical scaling depends on the specific requirements and constraints of the system, including the nature of the workload, scalability needs, budget, and the existing architecture of the application. Often, modern systems adopt a hybrid approach, utilizing both strategies for different components or services within the same application.
+
 # Load Balancer
 A load balancer is a critical component in distributed computing and networking that plays a central role in distributing incoming network traffic or requests across multiple servers or nodes in a way that optimizes resource utilization, maximizes throughput, minimizes response time, and ensures high availability and reliability. Load balancers are essential for several reasons in distributed systems:
 
