@@ -12,6 +12,7 @@ Support for various computing types (e.g., CPU, GPU).
 
 Users can store and retrieve data (object storage, file storage, databases).
 Scalable and durable storage solutions.
+
 3. **Networking Services:**
 
 Users can configure and manage network resources (load balancers, virtual networks).
@@ -26,10 +27,12 @@ Role-based access control (RBAC).
 
 Logging and monitoring services for resource usage and application performance.
 Integration with popular monitoring tools.
+
 6. **Scalability and Elasticity:**
 
 Ability to scale resources up or down based on demand.
 Auto-scaling mechanisms for dynamic workloads.
+
 7. **Fault Tolerance and High Availability:**
 
 Redundancy and failover mechanisms for critical components.
@@ -44,6 +47,7 @@ Load balancing to distribute incoming traffic.
 
 SDKs, APIs, and developer-friendly tools for easy integration.
 Support for popular programming languages and frameworks.
+
 10. **Billing and Metering:**
 
 Metered billing based on resource consumption.
@@ -55,14 +59,17 @@ Transparent cost tracking and reporting.
 
 Users can provision virtual machines, containers, and other computing resources.
 Specify resource configurations, such as CPU, memory, and storage.
+
 2. **Data Storage and Retrieval:**
 
 Users can store and retrieve data using various storage services.
 Support for object storage, file storage, and databases.
+
 3. **Network Configuration:**
 
 Users can configure virtual networks, load balancers, and other network resources.
 Ensure security and isolation between different user environments.
+
 4. **Identity and Access Management:**
 
 Secure user authentication and authorization.
