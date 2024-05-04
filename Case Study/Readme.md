@@ -14,3 +14,4 @@ May I want to give you some advice, you can read the articles of the company med
 
 [How Swiggy migrated its k8s workload to Graviton](https://bytes.swiggy.com/how-swiggy-migrated-its-k8s-workload-to-graviton-d2643bbc7871)
 
+[Myntra Category Prediction for Search Query Understanding](https://medium.com/myntra-engineering/category-prediction-for-search-query-understanding-f46283151c92)
