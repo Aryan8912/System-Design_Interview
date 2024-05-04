@@ -19,3 +19,5 @@ May I want to give you some advice, you can read the articles of the company med
 [How Uber Serves Over 40 Million Reads Per Second from Online Storage Using an Integrated Cache](https://www.uber.com/en-IN/blog/how-uber-serves-over-40-million-reads-per-second-using-an-integrated-cache/?uclick_id=03a349c6-0456-4988-9ca5-f2861fdeb687)
 
 [Kubernetes onboarding journey of Myntra](https://medium.com/myntra-engineering/kubernetes-onboarding-journey-of-myntra-b972b6a67356)
+
+[Dynamic Kubernetes Cluster Scaling at Airbnb](https://medium.com/airbnb-engineering/dynamic-kubernetes-cluster-scaling-at-airbnb-d79ae3afa132)
