@@ -1,5 +1,7 @@
 # API Design all you need to know 
 
+REST, which stands for Representational State Transfer, is an architectural style for designing networked applications. It was introduced and defined in 2000 by Roy Fielding in his doctoral dissertation. REST is not a protocol or standard, but rather a set of guidelines that simplifies the communication between client and server components in a network.
+
 API design refers to the process of developing application programming interfaces (APIs) that expose data and application functionality for use by developers and applications. Effective API design involves planning and decision-making about how the API will function, how it will be used, and how it will integrate with other services. Here are the key aspects of API design:
 
 1. **Purpose and Functionality**: The primary step in API design is to define the purpose of the API. This involves understanding what services or data the API will provide access to and how it will support the business goals or user needs.
