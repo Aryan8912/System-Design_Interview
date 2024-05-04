@@ -15,3 +15,5 @@ May I want to give you some advice, you can read the articles of the company med
 [How Swiggy migrated its k8s workload to Graviton](https://bytes.swiggy.com/how-swiggy-migrated-its-k8s-workload-to-graviton-d2643bbc7871)
 
 [Myntra Category Prediction for Search Query Understanding](https://medium.com/myntra-engineering/category-prediction-for-search-query-understanding-f46283151c92)
+
+[How Uber Serves Over 40 Million Reads Per Second from Online Storage Using an Integrated Cache](https://www.uber.com/en-IN/blog/how-uber-serves-over-40-million-reads-per-second-using-an-integrated-cache/?uclick_id=03a349c6-0456-4988-9ca5-f2861fdeb687)
