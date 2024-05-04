@@ -10,3 +10,4 @@ May I want to give you an advice, you can read the articles of the company medui
 
 [how discord stored trillion of messages](https://discord.com/blog/how-discord-stores-trillions-of-messages)
 
+[Using Machine Learning to Predict Value of Homes On Airbnb](https://medium.com/airbnb-engineering/using-machine-learning-to-predict-value-of-homes-on-airbnb-9272d3d4739d)
