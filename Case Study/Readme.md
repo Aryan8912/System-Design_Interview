@@ -8,3 +8,5 @@ May I want to give you an advice, you can read the articles of the company medui
 
 [How Disney+ Hotstar Delivered 5 Billion Emojis in Real Time](https://blog.hotstar.com/capturing-a-billion-emojis-62114cc0b440)
 
+[how discord stored trillion of messages](https://discord.com/blog/how-discord-stores-trillions-of-messages)
+
