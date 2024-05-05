@@ -21,3 +21,5 @@ May I want to give you some advice, you can read the articles of the company med
 [Kubernetes onboarding journey of Myntra](https://medium.com/myntra-engineering/kubernetes-onboarding-journey-of-myntra-b972b6a67356)
 
 [Dynamic Kubernetes Cluster Scaling at Airbnb](https://medium.com/airbnb-engineering/dynamic-kubernetes-cluster-scaling-at-airbnb-d79ae3afa132)
+
+[Twitter's Recommendation Algorithm](https://blog.x.com/engineering/en_us/topics/open-source/2023/twitter-recommendation-algorithm)
