@@ -27,3 +27,5 @@ May I want to give you some advice, you can read the articles of the company med
 [Zomato Estimating Food Preparation Time](https://medium.com/zomato-technology/the-deep-tech-behind-estimating-food-preparation-time-e5068807acb0)
 
 [How does Dream11 serve millions of Personalised Contests in a match](https://medium.com/dream11-tech-blog/how-does-dream11-serve-millions-of-personalised-contests-in-a-match-cbb00463b7da)
+
+[Zomato Handles Up To 2.5x More Transactions After Migrating Non-Relational Database To AWS](https://aws.amazon.com/solutions/case-studies/zomato/?did=cr_card&trk=cr_card)
