@@ -23,3 +23,5 @@ May I want to give you some advice, you can read the articles of the company med
 [Dynamic Kubernetes Cluster Scaling at Airbnb](https://medium.com/airbnb-engineering/dynamic-kubernetes-cluster-scaling-at-airbnb-d79ae3afa132)
 
 [Twitter's Recommendation Algorithm](https://blog.x.com/engineering/en_us/topics/open-source/2023/twitter-recommendation-algorithm)
+
+[Zomato Estimating Food Preparation Time](https://medium.com/zomato-technology/the-deep-tech-behind-estimating-food-preparation-time-e5068807acb0)
