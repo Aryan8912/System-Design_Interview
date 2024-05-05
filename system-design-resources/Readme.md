@@ -5,5 +5,5 @@
 
 [Software Interviews Prep](https://www.youtube.com/@SoftwareInterviewsPrep)
 
-List of Resources where I am creating this repository 
+
 
