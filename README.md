@@ -2,11 +2,9 @@
 
 Hi my Fellow Developers this repo is for all you need to know about System Design if you read this repo you will be a master in System Design
 
-# Design Pattern 
-https://github.com/Aryan8912/System-Design_Interview/blob/main/Design-Pattern.md
+# [Design Pattern](https://github.com/Aryan8912/System-Design_Interview/blob/main/Design-Pattern.md)
 
-# Unified Modeling Language (UML) Diagrams
-https://github.com/Aryan8912/System-Design_Interview/blob/main/Unified-Modeling-Language-(UML)-Diagrams.md
+# [Unified Modeling Language (UML) Diagrams](https://github.com/Aryan8912/System-Design_Interview/blob/main/Unified-Modeling-Language-(UML)-Diagrams.md)
 
 # When to Choose Horizontal Over Vertical Scaling
 
